@@ -34,7 +34,7 @@ public class TestController extends HttpServlet {
 		request.setAttribute("testList", queryNewsByContent);
 		request.setAttribute("content", content);
 		//要跳转在前端url
-		request.getRequestDispatcher("/test.jsp").forward(request, response);
+		request.getRequestDispatcher("/test.ftl").forward(request, response);
 	}
 
 
